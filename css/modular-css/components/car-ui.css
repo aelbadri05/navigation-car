@@ -1,0 +1,60 @@
+/* Auto Steuerung Styles */
+.start_stop-box,
+.router_nav-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.start-box,
+.stop-box,
+.router-box,
+.nav-box {
+  justify-self: center;
+  text-align: center;
+}
+
+.start_stop-box .start-box .btn,
+.start_stop-box .stop-box .btn,
+.indicator {
+  margin: 0 auto;
+}
+
+.indicator {
+  margin-top: 6px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: none;
+}
+
+#start {
+  background-color: #28a745;
+}
+
+#stop {
+  background-color: #dc3545;
+}
+
+#destination {
+  width: 100%;
+  padding: 12px;
+  margin: auto;
+  border: 2px solid #e9ecef;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+#destination:focus {
+  border-color: var(--color-blue);
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.25);
+  outline: none;
+}
+
+.auto-erstellen,
+.nav-cancel {
+  display: grid;
+  justify-content: center;
+}

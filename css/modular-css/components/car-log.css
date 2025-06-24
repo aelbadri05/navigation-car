@@ -1,0 +1,30 @@
+/* Aktivitätsprotokoll Styles */
+.box p {
+  font-style: italic;
+  color: #333;
+}
+
+/* #car-log,
+.car-log-box {
+  margin-top: 20px;
+}
+
+.car-log-box {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 10px 7px 4px rgba(0, 0, 0, 0.5);
+  border: 2px solid var(--color-orange);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.car-log-box:hover {
+  background-color: #f5f5f5;
+  transform: scale(1.01);
+}
+
+.car-log-box p {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+} */

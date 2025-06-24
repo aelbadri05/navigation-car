@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <meta name="description" content="Interaktives Lernprojekt: NavigationCar – Simulation eines Navigationsautos mit JavaScript ES6 Modules. Objektorientierung, GPS, Motorlogik und moderne Modulsysteme in einer praxisnahen Anwendung.">
+  <meta name="keywords" content="JavaScript, ES6 Modules, OOP, GPS Simulation, Engine, Navigation Car, Lernprojekt, Programmieren, Webentwicklung, Objektorientierung, HTML, ECMAScript 6">
+  <meta name="author" content="Abdellatif El Badri">
+
+  <!-- Design & App Settings -->
+  <meta name="theme-color" content="#ffffff">
+  <meta name="msapplication-TileColor" content="#ffffff">
+
+  <!-- Favicon & Icons -->
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/icons/favicon-48x48.png">
+  <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/icons/android-chrome-512x512.png">
+
+  <!-- Ressourcen -->
+  <link rel="stylesheet" href="css/modular-css/main.css">
+  <!-- <script src="js/carActivation.js" defer></script> -->
+  <script src="js/darkmode.js" defer></script>
+  <!-- <script src="js/script.js" defer></script> -->
+  <script src="js/main.js" type="module"></script>
+
+
+  <!-- Titel -->
+  <title>NavigationCar – Simulation eines Navigationsautos</title>
+</head>
+
+<body>
+    <button id="darktheme" aria-label="Toggle Dark Mode" title="Darkmode">
+      🌜
+    </button>
+
+    <div class="content">
+      <header class="logo-container">
+        <img id="logo" src="assets/images/Logo.png" alt="NavigationCar Logo Icon" >
+        <h1>NavigationCar Simulator</h1>
+        <h2>Interaktive Simulation eines intelligenten Fahrzeugsystems</h2>
+      </header>
+
+      <main>
+        <div class="main-container">
+          <!-- Auto Konfiguration -->
+          <div class="box auto-konfiguration" id="car-config">
+            <h3>
+              <img src="assets/images/Auto_Konfiguration.png" alt="Audio Konfiguration Icon" >Auto Konfiguration
+            </h3>
+            <form id="car-form">
+              <div class="car-box">
+                <label for="brand">Marke:</label>
+                <input  type="text" id="brand" placeholder="z.B. BMW, Mercedes, Audi" >
+              </div>
+              <div class="car-box">
+                <label for="model">Modell:</label>
+                <input
+                  type="text" id="model" placeholder="z.B. A4, C-Klasse, 3er" >
+              </div>
+              <div class="car-box">
+                <label for="horsepower">Leistung (PS):</label>
+                <input type="number" id="horsepower" min="50" max="1000" placeholder="50-1000" >
+              </div>
+              <div class="car-box">
+                <label for="fuelType">Kraftstofftyp:</label>
+                <select id="fuelType">
+                  <option value="Benzin">Benzin</option>
+                  <option value="Diesel" selected>Diesel</option>
+                  <option value="Elektro">Elektro</option>
+                  <option value="Hybrid">Hybrid</option>
+                </select>
+              </div>
+              <div class="auto-erstellen">
+                <button type="button" class="btn btn-primary" id="create-car">
+                  <img class="btn-icon" src="assets/images/Auto_erstellen.png" alt="Auto erstellen Icon" > Auto Erstellen
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Auto Steuerung -->
+          <div class="box auto-steuerung" id="car-ui-box">
+            <h3>
+              <img src="assets/images/Auto_Steuerung.png" alt="Auto Steuerung Icon" >Auto Steuerung
+            </h3>
+            <form id="car-ui">
+              <div class="start_stop-box">
+                <div class="start-box">
+                  <button class="btn btn-primary" id="startCar" disabled>
+                    <img class="btn-icon" src="assets/images/Motor_starten.png" alt="Motor starten Icon" > Motor starten
+                  </button>
+                  <div id="start" class="indicator"></div>
+                </div>
+                <div class="stop-box">
+                  <button class="btn btn-primary" id="stopCar" disabled>
+                    <img class="btn-icon" src="assets/images/Motor_stoppen.png" alt="Motor stoppen Icon" > Motor stoppen
+                  </button>
+                  <div id="stop" class="indicator"></div>
+                </div>
+              </div>
+
+              <div class="car-box">
+                <label for="destination">Navigationsziel:</label>
+                <input type="text" id="destination" placeholder="z.B. Berlin, München, Hamburg" disabled >
+              </div>
+
+              <div class="router_nav-box">
+                <div class="router-box">
+                  <button class="btn btn-primary" id="planRoute" disabled>
+                    <img class="btn-icon" src="assets/images/Route_planen.png" alt="Route planen Icon" > Route planen
+                  </button>
+                </div>
+                <div class="nav-box">
+                  <button class="btn btn-primary" id="showStatus" disabled >
+                    <img class="btn-icon" src="assets/images/Status_anzeigen.png" alt="Status anzeigen Icon" > Status anzeigen
+                  </button>
+                </div>
+              </div>
+
+              <div class="nav-cancel">
+                <button class="btn btn-primary" id="cancelNav" disabled >
+                  <img class="btn-icon" src="assets/images/Navigation_abbrechen.png" alt="Navigation abbrechen Icon" > Navigation abbrechen
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Auto Status -->
+          <div class="box auto-status">
+            <h3>
+              <img src="assets/images/Auto_Status.png" alt="Auto Status Icon" >Auto Status
+            </h3>
+            <div class="auto-status-box">
+              <div>
+                <h4>Fahrzeug</h4>
+                <span class="status sts-fz"></span>
+              </div>
+              <div>
+                <h4>Motor</h4>
+                <span class="status sts-mt"></span>
+              </div>
+              <div>
+                <h4>GPS Navigation</h4>
+                <span class="status sts-nav"></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Aktivitätsprotokoll -->
+          <div class="box aktivitätsprotokoll activity-log" id="activity-log">
+            <h3>
+              <img src="assets/images/Auto_Aktivitätsprotokoll.png" alt="Aktivitätsprotokoll Icon" >Aktivitätsprotokoll
+            </h3>
+            <p>Das Protokoll der Fahrzeugaktionen wird hier angezeigt.</p>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <p>&copy; 2025 NavigationCar – Alle Rechte vorbehalten</p>
+      </footer>
+    </div>
+  </body>
+</html>
+

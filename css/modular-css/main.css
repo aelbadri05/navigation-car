@@ -1,0 +1,23 @@
+/* ========================== main.css – Modular Import Chain ========================== */
+
+/* ========== Base Styles ========== */
+@import url("base/reset.css");
+@import url("base/layout.css");
+@import url("base/typography.css");
+@import url("base/darkmode.css");
+
+/* ========== Component Styles ========== */
+@import url("components/content.css");
+@import url("components/header.css");
+@import url("components/main-area.css");
+@import url("components/car-config.css");
+@import url("components/car-ui.css");
+@import url("components/car-status.css");
+@import url("components/car-log.css");
+@import url("components/buttons.css");
+@import url("components/footer.css");
+
+/* ========== Utility & Responsive ========== */
+@import url("utilities/utility.css");
+@import url("utilities/responsive.css");
+@import url("utilities/grid.css");

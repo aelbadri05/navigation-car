@@ -1,0 +1,38 @@
+/* Header Styles */
+.logo-container {
+  width: 80%;
+  background: linear-gradient(to bottom right, #2c3f51, #3498db);
+  text-align: center;
+  color: #fff;
+  border: 2px solid #f54900;
+  border-radius: 20px;
+  margin: 40px auto;
+  padding: 30px;
+  text-shadow: 10px 7px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 10px 7px 4px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+  transform-origin: center center;
+}
+
+.logo-container:hover {
+  background: linear-gradient(to bottom right, #3498db, #2c3f51);
+  transform: translateY(-10px);
+}
+
+.logo-container img {
+  display: block;
+  margin: 0 auto;
+  width: 25%;
+  max-width: 180px;
+  height: auto;
+}
+
+.logo-container h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.logo-container h2 {
+  font-size: 1.2rem;
+  font-weight: lighter;
+}

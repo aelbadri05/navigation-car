@@ -1,0 +1,42 @@
+/* Hauptbereich <main> Styles */
+main {
+  width: 80%;
+  border: 2px solid #f54900;
+  border-radius: 20px;
+  margin: auto;
+  padding: 20px;
+  box-shadow: 10px 7px 4px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Einheitliche Box-Stilistik */
+.box {
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  width: 100%;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 10px 7px 4px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+.box:hover {
+  transform: translateY(-3px);
+  box-shadow: 12px 10px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* Box-Titel mit Bild */
+h3 {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to bottom right, #2c3f51, #3498db);
+  text-align: center;
+  color: #fff;
+  border: 2px solid #f54900;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+  transform-origin: center center;
+  text-shadow: 10px 7px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 10px 7px 4px rgba(0, 0, 0, 0.5);
+}

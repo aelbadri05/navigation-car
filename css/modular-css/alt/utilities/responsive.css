@@ -1,0 +1,25 @@
+/* utilities/responsive.css */
+@media (max-width: 768px) {
+  .main-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* @media screen and (max-width: 768px) {
+  header,
+  main,
+  footer {
+    width: 95% !important;
+    margin: 10px auto !important;
+  }
+  .main-container {
+    grid-template-columns: 1fr !important;
+  }
+  .btn-primary {
+    width: 100%;
+    margin-left: 0;
+  }
+  #logo {
+    width: 50%;
+  }
+} */

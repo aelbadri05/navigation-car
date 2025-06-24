@@ -1,0 +1,36 @@
+/* Auto Konfiguration Styles */
+.car-box {
+  margin: 20px auto;
+  text-align: left;
+  max-width: 500px;
+}
+
+.car-box label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #555;
+  text-align: left;
+  cursor: default;
+}
+
+.car-box input,
+.car-box select {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #e9ecef;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.car-box input:focus,
+.car-box select:focus {
+  border-color: var(--color-blue);
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.25);
+  outline: none;
+}
+
+.car-box select {
+  cursor: pointer;
+}

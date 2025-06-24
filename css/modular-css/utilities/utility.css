@@ -1,0 +1,10 @@
+/* Hilfsklassen */
+img {
+  width: 48px;
+  height: 48px;
+  border: none;
+}
+
+.hidden { 
+  display: none; 
+}

@@ -1,0 +1,12 @@
+/* Footer Styles */
+footer {
+  width: 80%;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(to bottom right, #2c3f51, #3498db);
+  border: 2px solid #f54900;
+  border-radius: 20px;
+  padding: 10px;
+  margin: auto;
+  box-shadow: 10px 7px 4px rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,57 @@
+/* Buttons Styles */
+
+/* General Button Styles */
+.btn {
+  padding: 12px 24px;
+  margin: 5px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #e8f0fe;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #d6e4f5;
+  transform: scale(1.02);
+  box-shadow: 0 10px 20px rgba(52, 152, 219, 0.3);
+}
+
+/* Primary Button Styles */
+.btn-primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  margin: 0 auto 18px 0;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to bottom right, #3498db, #2c3f51);
+  box-shadow: 0 10px 20px rgba(52, 152, 219, 0.3);
+}
+
+/* Button Icons */
+.btn img,
+.btn-icon {
+  width: 60px;
+  height: 60px;
+}
+
+/* Disabled Button & Inputs */
+button[disabled],
+input[disabled],
+select[disabled] {
+  cursor: no-drop;
+  opacity: 0.5;
+}

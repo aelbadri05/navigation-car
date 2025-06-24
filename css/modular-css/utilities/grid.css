@@ -1,0 +1,106 @@
+/* .content {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  gap: 5px;
+  align-content: center;
+}
+
+header{
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+} */
+
+/* Hauptcontainer für alle Boxen */
+/* .main-container {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  grid-template-columns: repeat(6, 1fr);
+  justify-content: space-around;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.auto-konfiguration {
+  grid-column: 1 / 4;
+}
+
+.auto-steuerung {
+  grid-column: 4 / 7;
+} 
+
+.auto-status {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  grid-column: 1 / 7;
+}
+
+.auto-status-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.aktivitätsprotokoll {
+  grid-column: 1 / 7
+} */
+
+/* ========================== Grid Layout Styles ========================== */
+
+/* Layout für .content */
+.content {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  gap: 5px;
+}
+
+/* Layout für Header */
+header {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+}
+
+/* Hauptcontainer mit Grid-System */
+.main-container {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  grid-template-columns: repeat(6, 1fr);
+  justify-content: space-around;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Bereich: Auto Konfiguration */
+.auto-konfiguration {
+  grid-column: 1 / 4;
+}
+
+/* Bereich: Auto Steuerung */
+.auto-steuerung {
+  grid-column: 4 / 7;
+}
+
+/* Bereich: Auto Status */
+.auto-status {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  grid-column: 1 / 7;
+}
+
+.auto-status-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* Bereich: Aktivitätsprotokoll */
+.aktivitätsprotokoll {
+  grid-column: 1 / 7;
+}

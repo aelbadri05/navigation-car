@@ -1,0 +1,35 @@
+/* Auto Status Styles */
+.auto-status-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 6px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.auto-status-box div {
+  text-align: left;
+  padding: 12px;
+  font-weight: bold;
+  border-radius: 8px;
+  border-left: 4px solid #3498db;
+  background-color: #eff1f3;
+  transition: all 0.3s ease-in-out;
+  gap: 6px;
+  cursor: default;
+}
+
+.auto-status-box div:hover {
+  background-color: #3498db;
+  color: #fff;
+  border-left: 4px solid #f54900;
+  transform: scale(1.05);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(52, 152, 219, 0.3);
+}
+
+.auto-status-box h4{
+  text-decoration: 2px underline #f54900;
+}
+

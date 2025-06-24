@@ -1,0 +1,17 @@
+/* Typografie */
+body {
+  font-size: 1rem;
+  color: #2c3e50;
+}
+
+h1, h2, h3, h4, p, label {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p { 
+  line-height: 1.6; 
+}
+
+label {
+  cursor: default;
+}

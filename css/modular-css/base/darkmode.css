@@ -1,0 +1,79 @@
+/* ====================== Darkmode – Verbesserte Version mit Variablen ====================== */
+
+:root {
+  --dark-bg: #111;
+  --dark-text: #eee;
+  --dark-box: #1e1e1e;
+  --dark-border: #333;
+  --dark-input: #333;
+  --dark-label-bg: linear-gradient(to bottom right, #444, #222);
+  --dark-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+}
+
+.darktheme {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+  transition: background-color 0.3s, color 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.darktheme footer,
+.darktheme header,
+.darktheme .box{
+  background: var(--dark-bg);
+  border-color: var(--dark-border);
+  box-shadow: var(--dark-shadow);
+}
+
+.darktheme main{
+  box-shadow: var(--dark-shadow);
+}
+
+.darktheme input,
+.darktheme select {
+  background-color: var(--dark-input);
+  color: var(--dark-text);
+  border: 1px solid var(--dark-border);
+  transition: background-color 0.3s, color 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.darktheme h3 {
+  background: var(--dark-label-bg);
+  color: var(--dark-text);
+  transition: background-color 0.3s, color 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.darktheme h4 {
+  color: #111111;
+  transition: background-color 0.3s, color 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.darktheme .activity-log p{
+  background-color: var(--dark-box);
+  color: var(--dark-text);
+  transition: background-color 0.3s, color 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+
+
+#darktheme {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: #f1c40f;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+#darktheme:hover {
+  background-color: #f39c12;
+}
