@@ -1,10 +1,10 @@
 /* ========================== main.css – Modular Import Chain ========================== */
 
 /* ========== Base Styles ========== */
+@import url("base/darkmode.css");
 @import url("base/reset.css");
 @import url("base/layout.css");
 @import url("base/typography.css");
-@import url("base/darkmode.css");
 
 /* ========== Component Styles ========== */
 @import url("components/content.css");
